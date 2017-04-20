@@ -1,0 +1,12 @@
+{
+  "name": "electron-hardware",
+  "version": "1.0.0",
+  "description": "eletctron hardware",
+  "main": "index.js",
+  "repository": "https://hoheehohee@github.com/hoheehohee/electron-hardware.git",
+  "author": "hohee <boycat87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.5"
+  }
+}
