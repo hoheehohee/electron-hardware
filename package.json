@@ -3,10 +3,30 @@
   "version": "1.0.0",
   "description": "eletctron hardware",
   "main": "index.js",
-  "repository": "https://hoheehohee@github.com/hoheehohee/electron-hardware.git",
-  "author": "hohee <boycat87@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "electron": "^1.6.5"
+
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "dist": "build",
+    "build": "npm run build:win"
+  },
+
+  "devDependencies": {
+    "better-npm-run": "0.0.15",
+    "electron-builder": "^17.1.1"
+  },
+
+  "build": {
+    "appId": "com.exam.exam-electron",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "resources/windows/Captain-America.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerHeaderIcon": "resources/windows/Captain-America.ico"
+    }
   }
 }
