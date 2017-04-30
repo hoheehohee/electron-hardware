@@ -27,6 +27,15 @@
     "nsis": {
       "oneClick": true,
       "installerHeaderIcon": "resources/windows/Captain-America.ico"
+    },
+    "mac" : {
+      "target" : "dmg",
+      "category" : "public.app-category.graphics-desig",
+      "icon" : "resources/osx/Apple.icons"
+    },
+    "dmg" : {
+      "icon" : "resources/osx/Apple.icons",
+      "background" : null
     }
   }
 }
